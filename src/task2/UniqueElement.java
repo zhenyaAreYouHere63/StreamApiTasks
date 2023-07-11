@@ -2,10 +2,12 @@ package task2;
 
 import java.util.Arrays;
 
-
-public class UniqueElements {
+public class UniqueElement {
     public static void main(String[] args) {
-        int[] count = Arrays.stream(getArrayNumbers()).flatMapToInt(Arrays::stream).distinct().toArray();
+        int[] count = Arrays.stream(getArrayNumbers())
+                .flatMapToInt(Arrays::stream)
+                .distinct()
+                .toArray();
         System.out.println("List of unique elements: ");
         for (int j : count) {
             System.out.println(j);
