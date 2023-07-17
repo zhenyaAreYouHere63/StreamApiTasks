@@ -7,9 +7,8 @@ import java.util.stream.Stream;
 
 public class ListOfStudent {
     public static void main(String[] args) {
-        List<Student> filterOfStudents = getListOfStudents().stream()
-                .filter(x -> x.getAge() > 18 && x.getAverageMark() == 90)
-                .toList();
+        Stream<Student> streamOfListStudents = getListOfStudents().stream();
+        List<Student> filterOfStudents = streamOfListStudents.filter(x -> x.getAge() > 18 && x.getAverageMark() == 90).toList();
         System.out.println("List of filtered name: ");
         for (Student filterOfStudent : filterOfStudents) {
             System.out.println(filterOfStudent.getName() + " ");

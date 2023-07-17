@@ -1,8 +1,8 @@
 package task4;
 
 public class User {
-    private final int salary;
-    private final String name;
+    private int salary;
+    private String name;
 
     public User(String name, int salary) {
         this.name = name;

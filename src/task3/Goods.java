@@ -1,11 +1,11 @@
 package task3;
 
-public class Good {
+public class Goods {
     private final String name;
     private final int cost;
     private final int quantity;
 
-    public Good(String name, int cost, int quantity) {
+    public Goods(String name, int cost, int quantity) {
         this.name = name;
         this.cost = cost;
         this.quantity = quantity;

@@ -3,12 +3,12 @@ package task4;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.stream.Stream;
 
-public class HighSalary {
+public class HighestSalary {
     public static void main(String[] args) {
-        User maxSalaryOfUser = getListOfUsers().stream()
-                .max(Comparator.comparingInt(User::getSalary))
-                .get();
+        Stream<User> streamOfListUsers = getListOfUsers().stream();
+        User maxSalaryOfUser = streamOfListUsers.max(Comparator.comparingInt(User::getSalary)).get();
         System.out.printf("The highest salary of the user %s is " + maxSalaryOfUser.getSalary(), maxSalaryOfUser.getName());
     }
 

@@ -1,14 +1,16 @@
 package task5;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
 import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+import java.util.stream.Stream;
 
 public class FactorialNumber {
     public static void main(String[] args) {
         try (
-                Scanner scanner = new Scanner(System.in);
-        ) {
+                Scanner scanner = new Scanner(System.in)) {
             int numberFromConsole = scanner.nextInt();
             BigInteger factorialOfNumber = getFactorial(numberFromConsole);
             System.out.println("Factorial of number " + numberFromConsole + " = " + factorialOfNumber);
