@@ -1,6 +1,5 @@
 package task1;
 
-
 public class Student {
     private final String name;
     private final int age;

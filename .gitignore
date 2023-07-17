@@ -4,6 +4,7 @@ out/
 !**/src/test/**/out/
 .idea
 StreamApi.iml
+clone(StreamApiTasks).iml
 
 ### Eclipse ###
 .apt_generated

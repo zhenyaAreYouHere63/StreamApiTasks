@@ -1,19 +1,16 @@
 package task6;
 
-import javax.lang.model.type.MirroredTypeException;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
-public class ParityNumbers {
+public class EvenNumber {
     private static final String answerYes = "Yes";
     private static final String answerNo = "No";
 
     public static void main(String[] args) {
-        Stream<Integer> streamOfListNumbers = getListOfNumbers().stream();
-        boolean checkOfParity = streamOfListNumbers.anyMatch(x -> x % 2 == 0);
+        boolean checkOfParity = getListOfNumbers().stream()
+                .anyMatch(x -> x % 2 == 0);
         String answerToParity = checkOfParity ? answerYes : answerNo;
         System.out.println("There is an even number in the list? " + answerToParity);
     }

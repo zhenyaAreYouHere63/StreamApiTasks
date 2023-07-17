@@ -1,11 +1,8 @@
 package task5;
 
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
 import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
 
 public class FactorialNumber {
     public static void main(String[] args) {
